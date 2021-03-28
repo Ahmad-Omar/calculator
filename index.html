@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calc-display">
+            <input type="text" class="display" value="0" readonly />
+        </div>
+        <div class="calc-keys">
+            <div class="top-operators">
+                <button class="reset">AC</button>
+                <button class="negative-positive-operator">+/-</button>
+                <button class="operator percent-operator operator-percent">%</button>
+            </div>
+
+            <div class="number-keys">
+                <button class="number num-9">9</button>
+                <button class="number num-8">8</button>
+                <button class="number num-7">7</button>
+                <button class="number num-6">6</button>
+                <button class="number num-5">5</button>
+                <button class="number num-4">4</button>
+                <button class="number num-3">3</button>
+                <button class="number num-2">2</button>
+                <button class="number num-1">1</button>
+            </div>
+            <div class="bottom-part">
+                <button class="number zero num-0">0</button>
+                <button class="decimal dot">.</button>
+            </div>
+            <div class="right-operators">
+                <button class="operator operator-divide">÷</button>
+                <button class="operator operator-multiply">x</button>
+                <button class="operator operator-subtract">-</button>
+                <button class="operator addition operator-add">+</button>
+                <button class="operator equal operator-equal">=</button>
+            </div>
+            <div class="currency-convertor">
+                <button class="currency EUR-ILS">EUR &rarr; ILS</button>
+                <button class="currency ILS-EUR">ILS &rarr; EUR</button>
+                <button class="currency USD-ILS">USD &rarr; ILS</button>
+                <button class="currency ILS-USD">ILS &rarr; USD</button>
+                <!-- <h5 class="currency-title">Currency <br />Convertor</h5> -->
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/decimal.js"></script>
+</body>
+
+</html>
