@@ -6,6 +6,13 @@
     background-color: #212638;
 }
 
+@media (min-width: 320px) and (max-width: 510px) {
+    .calculator {
+        width: auto;
+
+    }
+}
+
 .calc-display input {
     box-sizing: border-box;
     width: 100%;
@@ -46,6 +53,19 @@
 
     max-width: fit-content;
     margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 510px) {
+    .calc-keys {
+        display: grid;
+        grid-template-areas: 'top top top operators'
+            'numbers numbers numbers operators'
+            'numbers numbers numbers operators'
+            'numbers numbers numbers operators'
+            'bottom bottom bottom operators'
+            'currency currency currency currency';
+
+    }
 }
 
 .top-operators {
@@ -90,6 +110,14 @@
     border-radius: 12px;
     padding: 4px;
     margin: 0 8px;
+}
+
+@media (min-width: 320px) and (max-width: 510px) {
+    .currency-convertor {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 12px;
+    }
 }
 
 .currency-title {
